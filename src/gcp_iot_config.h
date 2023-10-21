@@ -15,16 +15,16 @@ const char* ntp_primary = "pool.ntp.org";
 const char* ntp_secondary = "time.nist.gov";
 
 const char *private_key_str =
-    "6e:b8:17:35:c7:fc:6b:d7:a9:cb:cb:49:7f:a0:67:"
-    "63:38:b0:90:57:57:e0:c0:9a:e8:6f:06:0c:d9:ee:"
-    "31:41";
+    "Generate Eliptic Curve (EC) private/public key pair"
+    "Extract Eliptic Curve (EC) private key"
+    "Copy and paste it in this part of the code";
 
 // Time in seconds to expire token += 20 minute for drift. Max is 24 hours (3600 * 24)
 const int jwt_exp_secs = 60*20;
 
 const char *root_cert =
     "-----BEGIN CERTIFICATE-----\n"
-    "Generate Eliptic Curve (EC) private/public key pair\n"
-    "Extract Eliptic Curve (EC) private key\n"
-    "Copy and paste it in this part of the code\n"
+    "Paste the certificate bytes from root certificate of Google here.\n"
+    "You can use any of the root certificate bytes with Google Trust Services (GTS)\n"
+    "as the Certificate Authority (CA)\n"
     "-----END CERTIFICATE-----\n";
