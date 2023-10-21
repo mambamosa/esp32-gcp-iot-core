@@ -64,6 +64,10 @@ void setupWifi(){
     Serial.print("[INTERNET] IP address: "); Serial.println(WiFi.localIP());
 }
 
+String getDefaultSensor(){
+  return "Wifi: " + String(WiFi.RSSI()) + "db";
+}
+
 String getValue(String data, char separator, int index) {
     int found = 0;
     int strIndex[] = { 0, -1 };
